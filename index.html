@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fonte – ton coach musculation</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#e85d70"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap">
+<title>Fonte – ton coach musculation</title><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#FF5A6E"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
-:root{--bg:#f5f6fa;--sf:#fff;--ink:#202638;--mu:#778094;--ln:#e6e8ef;--pl:#e85d70;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+:root{--bg:#FFF7F1;--ink:#1E1B2E;--mu:#7C788C;--ln:#EFE6DF;--pl:#FF5A6E;--sf:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;color:var(--ink);font:500 16px/1.45 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;padding-bottom:calc(100px + env(safe-area-inset-bottom,0px));background:radial-gradient(ellipse at 0 0,rgba(232,93,112,.10),transparent 28rem),radial-gradient(ellipse at 100% 12%,rgba(115,151,225,.10),transparent 25rem),var(--bg)}
-main{max-width:720px;margin:0 auto;padding:24px 17px 34px}
-h1,h2,h3{margin:0;color:#202638}h1{font-size:clamp(32px,8vw,40px);font-weight:900;letter-spacing:-1.5px}h2{font-size:20px;font-weight:850;letter-spacing:-.45px;margin-bottom:11px}h3{font-size:16px;font-weight:800}
-.sub{font-size:14px;color:#7b8496;margin:2px 0 14px}.lab{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:750;color:#8a92a3;display:block;margin-top:8px}
-.brandbar{display:flex;align-items:center;gap:11px;margin:3px 4px 23px}
-.brandmark{width:42px;height:42px;border-radius:15px;background:linear-gradient(145deg,#ff8998,#e85d70);color:#fff;display:grid;place-items:center;box-shadow:0 7px 18px rgba(232,93,112,.22)}
-.brandname{font-size:16px;letter-spacing:2.5px;font-weight:900}.brandtag{font-size:10px;letter-spacing:1.4px;color:#9299aa;border-left:1px solid #dfe2e9;padding-left:9px}
-.card{background:rgba(255,255,255,.94);border:1px solid #e9eaf0;border-radius:23px;padding:19px;margin-bottom:15px;box-shadow:0 8px 26px rgba(38,48,75,.055)}
-.today{border:1.5px solid #ed9aa5;box-shadow:0 8px 24px rgba(232,93,112,.09)}
+body{margin:0;background:var(--bg);color:var(--ink);font:500 16px/1.45 "DM Sans",system-ui,sans-serif;padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+main{max-width:640px;margin:0 auto;padding:20px 18px 30px}
+#app{display:grid;grid-template-columns:1fr 1fr;gap:14px}#app>*{grid-column:1/-1;min-width:0}#app>.half{grid-column:span 1}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;margin:0;color:var(--ink)}
+h1{font-size:clamp(34px,10vw,46px);font-weight:800;letter-spacing:-1.8px;line-height:1}h2{font-size:21px;font-weight:800;letter-spacing:-.5px;margin-bottom:12px}h3{font-size:17px;font-weight:700}
+.sub{font-size:14px;color:var(--mu);margin:2px 0 4px}.lab{display:block;font-size:12px;font-weight:700;color:var(--mu);margin:10px 0 4px}
+.brandbar{display:flex;align-items:center;gap:10px;margin:2px 0 22px}.brandmark{width:38px;height:38px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center}
+.brandname{font-family:"Bricolage Grotesque",sans-serif;font-size:20px;font-weight:800;letter-spacing:-.5px}.brandtag{display:none}
+.card{background:var(--sf);border-radius:28px;padding:20px;margin:0;--rb:#fff}
+.t-hero{background:#F2536A;color:#fff;--rb:#F2536A}.t-hero h2,.t-hero .sub,.t-hero .kick{color:#fff}
+.t-lav{background:#E9E3FF;--rb:#E9E3FF}.t-peach{background:#FFE3D6;--rb:#FFE3D6}.t-sky{background:#D8F0FF;--rb:#D8F0FF}.t-mint{background:#DDF6E6;--rb:#DDF6E6}
+.today{outline:2.5px solid var(--pl);outline-offset:-2.5px}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;row-gap:10px}.sp{justify-content:space-between}
-.big{font-size:40px;font-weight:900;letter-spacing:-1.6px;line-height:1}
-input,select,textarea{font:inherit;width:100%;background:#fafbfe;color:#252d40;border:1px solid #e2e5ed;border-radius:14px;padding:13px;min-height:47px}
-.row>input,.row>select{flex:1;min-width:0}input::placeholder,textarea::placeholder{color:#a0a7b5}
-input:focus,select:focus,textarea:focus{border-color:var(--pl);box-shadow:0 0 0 3px rgba(232,93,112,.12);outline:0}
-:is(button):focus-visible{outline:3px solid var(--pl);outline-offset:2px}
-button{font:inherit;font-weight:800;border:0;border-radius:14px;padding:12px 16px;cursor:pointer;color:#fff;background:linear-gradient(135deg,#f47c8b,#e85d70);box-shadow:0 6px 15px rgba(232,93,112,.18);transition:transform .15s}
-button:active{transform:scale(.97)}
-button.o{background:#fff5f6;border:1px solid #f2c5cc;color:#d94b60;box-shadow:none}button.g{background:transparent;color:#858da0;box-shadow:none;padding:6px 8px}
-.item{width:100%;text-align:left;background:#fbfcfe;color:#273047;border:1px solid #edf0f5;border-radius:15px;padding:14px;margin:7px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:none}
-.item:after{content:"›";font-size:22px;color:var(--pl);line-height:1}.item small{color:var(--mu);font-size:12px;margin-left:auto;font-weight:500}
-.chip{display:inline-flex;gap:4px;align-items:center;background:#fff3f5;border:1px solid #f3d4d9;color:#a74757;border-radius:12px;padding:6px 7px 6px 11px;margin:3px 3px 0 0;font-size:14px}.chip button{padding:2px 8px}
-.bar{height:9px;background:#edf0f5;border-radius:99px;overflow:hidden;margin-top:9px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#e85d70,#ff9aa6);border-radius:99px}
-.ok{color:#d94b60;font-weight:700}svg.ch{width:100%;height:auto}figure img{aspect-ratio:3/4;object-fit:cover;border-radius:13px}
-.ring{--p:0%;--c:#e85d70;width:96px;height:96px;flex:0 0 96px;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(var(--c) var(--p),#edf0f5 0)}
-.ring:before{content:"";position:absolute;inset:9px;border-radius:50%;background:#fff}
-.ring>div{position:relative;text-align:center;line-height:1.1}.ring strong{display:block;font-size:21px;font-weight:900;letter-spacing:-.8px}.ring small{font-size:10px;color:var(--mu)}
-.weekly-summary{display:flex;align-items:center;gap:18px}.week-ring{width:104px;height:104px;flex-basis:104px}
-.week-days{display:flex;gap:7px;margin-top:12px}.week-day{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#f0f2f7;color:#8b93a3;font-size:10px;font-weight:800}.week-day.done{background:var(--pl);color:#fff}
-.focus-tags{display:flex;flex-wrap:wrap;gap:7px}.focus-tag{padding:7px 12px;border-radius:999px;background:#fff1f3;border:1px solid #f5d1d7;color:#c34d60;font-size:12px;font-weight:800}
-.hs,.week-strip{display:flex;gap:11px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}.hs::-webkit-scrollbar,.week-strip::-webkit-scrollbar{display:none}
-.hs{margin-top:12px}.xc{flex:0 0 140px;scroll-snap-align:start;border-radius:18px;padding:13px;background:linear-gradient(145deg,#fff1f3,#fff);border:1px solid #f5d1d7}.xc b{display:block;font-size:14px;line-height:1.2;margin-bottom:6px}.xc small{color:var(--mu);font-size:12px}
-.day-card{flex:0 0 80%;max-width:290px;scroll-snap-align:start;margin:0}
-.kick{font-size:10px;text-transform:uppercase;letter-spacing:1.4px;color:#d94b60;font-weight:850;margin-bottom:7px}
-.meal-grid{display:grid;grid-template-columns:1fr;gap:10px}.ms{border:1px solid #eceef4;background:#fbfcff;border-radius:17px;padding:13px}.ms p{margin:5px 0 10px;color:var(--mu);font-size:12px}.ms button{width:100%}.mk{color:#d94b60;font-weight:850}
+.big{font-size:40px;font-weight:800;letter-spacing:-1.6px;line-height:1}
+input,select,textarea{font:inherit;width:100%;background:#F4F0F8;color:var(--ink);border:0;border-radius:16px;padding:13px 14px;min-height:48px}
+.row>input,.row>select{flex:1;min-width:0}input::placeholder,textarea::placeholder{color:#A39FB3}
+input:focus,select:focus,textarea:focus{outline:2.5px solid var(--pl)}
+button{font:inherit;font-weight:700;border:0;border-radius:99px;padding:12px 20px;cursor:pointer;background:var(--pl);color:#fff;transition:transform .12s}
+button:active{transform:scale(.96)}button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+button.o{background:transparent;box-shadow:inset 0 0 0 2px var(--ink);color:var(--ink)}button.g{background:transparent;color:var(--mu);padding:6px 10px}
+.half button{width:100%;margin-left:0!important;padding:11px 8px}.half .row{flex-direction:column;align-items:flex-start;flex-wrap:wrap!important}
+.item{width:100%;text-align:left;background:#F4F0F8;color:var(--ink);border-radius:20px;padding:15px 16px;margin:8px 0 0;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.item:after{content:"→";color:var(--pl);font-weight:800}.item small{color:var(--mu);font-size:12px;margin-left:auto;font-weight:500}
+.chip{display:inline-flex;gap:4px;align-items:center;background:#fff;border-radius:99px;padding:5px 5px 5px 12px;margin:4px 4px 0 0;font-size:14px;font-weight:600}.chip button{padding:2px 8px}
+.bar{height:10px;background:#F0EAF5;border-radius:99px;overflow:hidden;margin-top:9px}.bar i{display:block;height:100%;background:var(--pl);border-radius:99px}
+.ok{color:var(--pl);font-weight:800}svg.ch{width:100%;height:auto}figure img{aspect-ratio:3/4;object-fit:cover;border-radius:18px}
+.ring{--p:0%;--c:#FF5A6E;width:92px;height:92px;flex:0 0 92px;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(var(--c) var(--p),rgba(30,27,46,.09) 0)}
+.ring:before{content:"";position:absolute;inset:10px;border-radius:50%;background:var(--rb)}
+.ring>div{position:relative;text-align:center;line-height:1.1}.ring strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:800}.ring small{font-size:10px;color:var(--mu)}
+.t-hero .ring{background:conic-gradient(#fff var(--p),rgba(255,255,255,.3) 0)}.t-hero .ring small{color:#fff}
+.weekly-summary{display:flex;align-items:center;gap:18px}.week-ring{width:108px;height:108px;flex-basis:108px}.week-ring strong{font-size:34px}
+.week-days{display:flex;gap:6px;margin-top:12px}.week-day{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.25);font-size:10px;font-weight:800}.week-day.done{background:#fff;color:#F2536A}
+.focus-tags{display:flex;flex-wrap:wrap;gap:7px}.focus-tag{padding:7px 13px;border-radius:99px;background:var(--ink);color:#fff;font-size:12px;font-weight:700}
+.hs,.week-strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 0 6px}.hs::-webkit-scrollbar,.week-strip::-webkit-scrollbar{display:none}
+.hs{margin-top:12px}.xc{flex:0 0 138px;scroll-snap-align:start;border-radius:20px;padding:14px;background:#fff}.xc b{display:block;font-size:14px;line-height:1.2;margin-bottom:6px}.xc small{color:var(--mu);font-size:12px}
+.day-card{flex:0 0 78%;max-width:290px;scroll-snap-align:start}.day-card:nth-child(4n+1){background:#FFE3D6}.day-card:nth-child(4n+2){background:#E9E3FF}.day-card:nth-child(4n+3){background:#DDF6E6}.day-card:nth-child(4n){background:#D8F0FF}
+.kick{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--pl);font-weight:800;margin-bottom:6px}
+.meal-grid{display:grid;grid-template-columns:1fr;gap:10px}.ms{background:#F4F0F8;border-radius:22px;padding:14px}.ms:nth-child(even){background:#FFF0E8}.ms p{margin:5px 0 10px;color:var(--mu);font-size:12px}.ms button{width:100%}.mk{font-weight:800;color:var(--pl)}
 @media(min-width:460px){.meal-grid{grid-template-columns:1fr 1fr}}
-nav{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:4px;padding:6px;border:1px solid #e1e4ec;border-radius:22px;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);box-shadow:0 12px 36px rgba(36,46,72,.13)}
-nav button{flex:1;min-height:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:6px 1px;background:transparent;color:#9299a9;box-shadow:none;font-size:10px;border-radius:15px}
-nav svg{width:23px;height:23px;display:block}nav button[aria-current="page"]{color:#d94b60;background:#fff0f2}
-#t{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:#252d40;color:#fff;padding:10px 16px;border-radius:14px;display:none;z-index:5;max-width:90%}
+nav{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));width:min(92vw,420px);display:flex;gap:2px;padding:7px;border-radius:99px;background:var(--ink);box-shadow:0 14px 34px rgba(30,27,46,.3)}
+nav button{flex:1;height:48px;padding:0;background:transparent;color:rgba(255,255,255,.55);display:grid;place-items:center}nav svg{width:23px;height:23px}nav button[aria-current="page"]{background:var(--pl);color:#fff}
+#t{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:var(--ink);color:#fff;padding:11px 18px;border-radius:99px;display:none;z-index:5;max-width:90%}
 </style></head><body>
 <main><div class="brandbar"><span class="brandmark" aria-hidden="true"><svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9v6M3.5 10v4M18 9v6m2.5-5v4M6 12h12"/></svg></span><span class="brandname">FONTE</span><span class="brandtag">FITNESS TRACKER</span></div><div id="app"></div></main>
 <nav id="nav"></nav><div id="t" role="status"></div>
@@ -83,11 +86,11 @@ function pref(n){const p=S.prefs[n]||{};const f=(id,l,v,s)=>`<div style="flex:1;
 return`<div class="row" style="align-items:flex-end">${f("pk","Poids (kg)",p.kg,.5)}${f("pb","Cran du banc",p.banc,1)}${f("ps","Séries",p.ser,1)}${f("pr","Répétitions",p.rep,1)}</div><button data-a="pref" data-n="${esc(n)}" style="margin-top:10px;width:100%">Enregistrer mes préférences</button>`}
 function home(){const c=calc(),d=T(),pl=S.plan.filter(x=>x.length).length,dn=wk().filter(x=>S.done[x]).length,ex=S.plan[di()],w=S.water[d]||0,k=kc(d);
 return`<h1>Salut 👋</h1><p class="sub">${new Date().toLocaleDateString("fr-FR",{weekday:"long",day:"numeric",month:"long"})}</p>
-<div class="card"><div class="weekly-summary">${ring(dn/7*100,dn,"/ 7","","week-ring")}<div style="flex:1"><span class="kick">Régularité</span><h2 style="margin:0 0 5px">Cette semaine</h2><p class="sub" style="margin:0">${dn===0?"On lance la semaine ?":dn===7?"Semaine parfaite, bravo !":`${dn} séance${dn>1?"s":""} validée${dn>1?"s":""} sur 7 jours`}</p><div class="week-days">${wk().map((x,i)=>`<span class="week-day ${S.done[x]?"done":""}" title="${D[i]}">${D[i][0]}</span>`).join("")}</div></div></div></div>
-<div class="card ${S.done[d]?"":"today"}"><div class="row sp"><h2 style="margin:0">Séance du jour</h2>${S.done[d]?`<span class="ok">Faite ✓</span>`:""}</div>${ex.length?`<div class="focus-tags" style="margin-top:12px">${focusFor(ex).map(x=>`<span class="focus-tag">${esc(x)}</span>`).join("")||`<span class="focus-tag">Renforcement</span>`}</div><div class="hs">${ex.map(n=>{const p=S.prefs[n];return`<div class="xc"><b>${esc(n)}</b><small>${p&&p.kg?p.kg+" kg · "+(p.ser||"?")+"×"+(p.rep||"?"):"à régler"}</small></div>`}).join("")}</div>`:`<p class="sub" style="margin-top:8px">Jour de repos (ou planning à remplir dans Séance).</p>`}</div>
-<div class="card"><h2>Calories</h2>${c?`<div class="row" style="flex-wrap:nowrap;gap:16px">${ring(k/c.kcal*100,k,"/ "+c.kcal+" kcal")}<p class="sub" style="margin:0">${mac(d,c)}</p></div>`:`<p class="sub">Renseigne tes mesures dans Compte pour calculer ton besoin.</p>`}</div>
-<div class="card"><h2>Eau</h2>${c?`<div class="row" style="flex-wrap:nowrap;gap:16px">${ring(w/c.eau*100,(w/1000).toFixed(2),"/ "+(c.eau/1000).toFixed(1)+" L","#4c8df6")}<p class="sub" style="margin:0">${S.wok[d]?"Objectif d’eau du jour validé ✓":"Un verre = 250 ml"}</p></div>`:`<p class="sub">Objectif calculé avec ton poids (Compte).</p>`}<div class="row" style="margin-top:12px"><button class="o" data-a="water" data-n="250">+ 1 verre</button><button class="g" data-a="water" data-n="-250">Annuler</button><button data-a="wok" style="margin-left:auto">${S.wok[d]?"✓ Eau bue":"J’ai bu mon eau"}</button></div></div>
-<div class="card"><h2>Sommeil et récupération</h2><p style="margin:0 0 10px">${adv()}</p><div class="row"><input id="sl" type="number" inputmode="decimal" step="0.5" placeholder="Heures dormies cette nuit" value="${S.sleep[d]||""}"><button data-a="sleep">Enregistrer</button></div></div>`}
+<div class="card t-hero"><div class="weekly-summary">${ring(dn/7*100,dn,"/ 7","","week-ring")}<div style="flex:1"><span class="kick">Régularité</span><h2 style="margin:0 0 5px">Cette semaine</h2><p class="sub" style="margin:0">${dn===0?"On lance la semaine ?":dn===7?"Semaine parfaite, bravo !":`${dn} séance${dn>1?"s":""} validée${dn>1?"s":""} sur 7 jours`}</p><div class="week-days">${wk().map((x,i)=>`<span class="week-day ${S.done[x]?"done":""}" title="${D[i]}">${D[i][0]}</span>`).join("")}</div></div></div></div>
+<div class="card t-lav"><div class="row sp"><h2 style="margin:0">Séance du jour</h2>${S.done[d]?`<span class="ok">Faite ✓</span>`:""}</div>${ex.length?`<div class="focus-tags" style="margin-top:12px">${focusFor(ex).map(x=>`<span class="focus-tag">${esc(x)}</span>`).join("")||`<span class="focus-tag">Renforcement</span>`}</div><div class="hs">${ex.map(n=>{const p=S.prefs[n];return`<div class="xc"><b>${esc(n)}</b><small>${p&&p.kg?p.kg+" kg · "+(p.ser||"?")+"×"+(p.rep||"?"):"à régler"}</small></div>`}).join("")}</div>`:`<p class="sub" style="margin-top:8px">Jour de repos (ou planning à remplir dans Séance).</p>`}</div>
+<div class="card half t-peach"><h2>Calories</h2>${c?`<div class="row" style="flex-wrap:nowrap;gap:16px">${ring(k/c.kcal*100,k,"/ "+c.kcal+" kcal")}<p class="sub" style="margin:0">${mac(d,c)}</p></div>`:`<p class="sub">Renseigne tes mesures dans Compte pour calculer ton besoin.</p>`}</div>
+<div class="card half t-sky"><h2>Eau</h2>${c?`<div class="row" style="flex-wrap:nowrap;gap:16px">${ring(w/c.eau*100,(w/1000).toFixed(2),"/ "+(c.eau/1000).toFixed(1)+" L","#4c8df6")}<p class="sub" style="margin:0">${S.wok[d]?"Objectif d’eau du jour validé ✓":"Un verre = 250 ml"}</p></div>`:`<p class="sub">Objectif calculé avec ton poids (Compte).</p>`}<div class="row" style="margin-top:12px"><button class="o" data-a="water" data-n="250">+ 1 verre</button><button class="g" data-a="water" data-n="-250">Annuler</button><button data-a="wok" style="margin-left:auto">${S.wok[d]?"✓ Eau bue":"J’ai bu mon eau"}</button></div></div>
+<div class="card t-mint"><h2>Sommeil et récupération</h2><p style="margin:0 0 10px">${adv()}</p><div class="row"><input id="sl" type="number" inputmode="decimal" step="0.5" placeholder="Heures dormies cette nuit" value="${S.sleep[d]||""}"><button data-a="sleep">Enregistrer</button></div></div>`}
 function seance(){const d=T(),i=di(),opts=all().map(e=>`<option>${esc(e[0])}</option>`).join("");
 let h=`<h1>Séances</h1><p class="sub">Planning de la semaine, modifiable.</p><div class="card ${S.done[d]?"":"today"}"><h2>Aujourd’hui · ${D[i]}</h2>`;
 const ex=S.plan[i];
@@ -122,7 +125,7 @@ return`<h1>Compte</h1><p class="sub">Tes données restent sur ce téléphone.</p
 ${c?`<div class="card"><h3>Tes objectifs</h3><p>${c.kcal} kcal par jour · ${(c.eau/1000).toFixed(1)} L d’eau par jour</p><p style="margin:0">Protéines ${c.P} g · Lipides ${c.L} g · Glucides ${Math.round((c.kcal-4*c.P-9*c.L)/4)} g</p></div>`:""}<div class="card"><h3>Sauvegarde</h3><p class="sub">Exporte, garde le texte, colle-le ici pour restaurer (même sur un autre téléphone).</p><textarea id="bk" rows="4"></textarea><div class="row" style="margin-top:8px"><button data-a="exp">Exporter</button><button class="o" data-a="imp">Restaurer</button></div></div><button class="o" data-a="reset" style="width:100%">Effacer toutes mes données</button>`}
 const V={home:["Accueil",home],seance:["Séance",seance],exos:["Exos",exos],food:["Repas",food],prog:["Progrès",prog],acc:["Compte",acc]};
 const I={home:'<path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9M9 20v-6h6v6"/>',seance:'<rect x="4" y="4" width="16" height="17" rx="3"/><path d="M8 2v4m8-4v4M8 10h8m-8 4h5m-5 3h3"/>',exos:'<path d="M4 7v10m-2-7v4m4-9v14m12-12v10m2-7v4m-4-9v14M6 12h12"/>',food:'<path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M17 3c-2 3-2 7 0 9h3V3m-3 9v9"/>',prog:'<path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 6-7"/><path d="M16 6h4v4"/>',acc:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>'};
-function render(){$("#nav").innerHTML=Object.keys(V).map(k=>`<button data-v="${k}" aria-label="${V[k][0]}" ${k===view?'aria-current="page"':""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[k]}</svg><span>${V[k][0]}</span></button>`).join("");$("#app").innerHTML=V[view][1]()}
+function render(){$("#nav").innerHTML=Object.keys(V).map(k=>`<button data-v="${k}" aria-label="${V[k][0]}" ${k===view?'aria-current="page"':""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${I[k]}</svg></button>`).join("");$("#app").innerHTML=V[view][1]()}
 document.addEventListener("change",e=>{if(e.target.id==="ph")return photo(e.target.files[0]);const s=e.target.dataset.sel;if(s){if(s==="pm")pm=e.target.value;else pe=e.target.value;render()}});
 document.addEventListener("click",e=>{const v=e.target.closest("[data-v]");if(v){view=v.dataset.v;open=-1;render();scrollTo(0,0);return}
 const b=e.target.closest("[data-a]");if(!b)return;const a=b.dataset.a,k=+b.dataset.k,j=+b.dataset.j,d=T();
